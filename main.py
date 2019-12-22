@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'insert datboi here'
+    return render_template('pages/index.html')
 
 if __name__ == '__main__':
     # debug mode - not for production
