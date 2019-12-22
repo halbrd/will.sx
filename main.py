@@ -1,6 +1,10 @@
 from flask import Flask, render_template
 
+from views.music import music
+
 app = Flask(__name__)
+
+app.register_blueprint(music)
 
 @app.route('/')
 def index():
