@@ -3,13 +3,44 @@
 {% block title %}Music{% endblock %}
 
 {% block body %}
-<h1>5 star</h1>
-{{ five_star_tracks }}
-
-<h1>4 star</h1>
-{{ four_star_tracks }}
-
-<h1>3 star</h1>
-{{ three_star_tracks }}
-
+<table>
+    <tr>
+        <th>Stars</th>
+        <th>Index</th>
+        <th>Title</th>
+        <th>Album</th>
+        <th>Artist</th>
+        <th>Year</th>
+    </tr>
+    {% for track in five_star_tracks %}
+    <tr>
+        <td>5</td>
+        <td>{{ track.index }}</td>
+        <td>{{ track.title }}</td>
+        <td>{{ track.album }}</td>
+        <td>{{ track.artist or track.album_artist }}</td>
+        <td>{{ track.year }}</td>
+    </tr>
+    {% endfor %}
+    {% for track in four_star_tracks %}
+    <tr>
+        <td>4</td>
+        <td>{{ track.index }}</td>
+        <td>{{ track.title }}</td>
+        <td>{{ track.album }}</td>
+        <td>{{ track.artist or track.album_artist }}</td>
+        <td>{{ track.year }}</td>
+    </tr>
+    {% endfor %}
+    {% for track in three_star_tracks %}
+    <tr>
+        <td>3</td>
+        <td>{{ track.index }}</td>
+        <td>{{ track.title }}</td>
+        <td>{{ track.album }}</td>
+        <td>{{ track.artist or track.album_artist }}</td>
+        <td>{{ track.year }}</td>
+    </tr>
+    {% endfor %}
+</table>
 {% endblock %}
