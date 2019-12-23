@@ -75,10 +75,10 @@ def index():
 
     five_star_tracks = retrieve_tracks(music, rating=10)
     four_star_tracks = retrieve_tracks(music, rating=8)
-    three_star_tracks = retrieve_tracks(music, rating=6)
+    # three_star_tracks = retrieve_tracks(music, rating=6)
 
     return render_template('music/index.html', **{
         'five_star_tracks': five_star_tracks,
         'four_star_tracks': four_star_tracks,
-        'three_star_tracks': three_star_tracks
+        # 'three_star_tracks': three_star_tracks
     })
