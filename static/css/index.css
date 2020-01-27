@@ -23,17 +23,13 @@ body, html {
     border-radius: var(--border-radius);
 
     width: calc(100% - 80px);
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
 
 
     box-shadow: 0px 0px 5px #222222;
 
     margin-bottom: 16px;
-}
-
-.card p {
-    margin: 0;
 }
 
 .card-top {
@@ -44,26 +40,40 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 40px;
 }
 
 .pic {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
 
-    padding: 30px;
+    margin: 20px;
+
+    border-radius: var(--border-radius);
 }
 
 h1 {
-    margin-top: 16px;
+    margin: 0;
+    font-size: 48px;
 }
 
 h2 {
-    margin-top: 12px;
+    margin: 0;
+    font-size: 24px;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
 }
 
 .card-bottom {
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
+
+    padding: 30px;
 }
 
 .links {
@@ -76,6 +86,8 @@ h2 {
 }
 
 .link-icon {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
+
+    margin: 8px;
 }
