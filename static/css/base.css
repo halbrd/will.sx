@@ -22,6 +22,6 @@ body {
 	color: var(--color-1);
 }
 
-a {
+a, a:hover, a:visited, a:active, a:focus {
 	text-decoration: none;
 }
