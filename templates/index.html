@@ -13,6 +13,7 @@
             <img class="pic" src="{{ url_for('static', filename='img/profile.png') }}" alt="">
             <h1>William Holt</h1>
             <h2>Software Engineer</h2>
+            <h3>📍 Melbourne, Australia</h3>
         </div>
         <div class="card-bottom inverted">
             <div class="icon">🎓</div>
@@ -21,8 +22,6 @@
             <div class="text">Software Engineer at <a href="https://digio.com.au/"><img class="digio" src="{{ url_for('static', filename='img/digio.png') }}" alt="DigIO"></a></div>
             <div class="icon">❤️</div>
             <div class="text">Python 🐍 and Kotlin <img src="{{ url_for('static', filename='img/kotlin.png') }}" alt="Kotlin"></div>
-            <div class="icon">📍</div>
-            <div class="text">Melbourne, Australia</div>
             <div class="icon">📧</div>
             <div class="text">{% for char in 'halbrd@gmail.com' %}<span class="decoy@nicedomain.com">{{ char }}</span>{% endfor %}</div>
         </div>

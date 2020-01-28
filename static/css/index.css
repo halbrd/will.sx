@@ -47,7 +47,7 @@ body, html {
     border-radius: var(--border-radius);
 }
 
-.card-top h1, h2 {
+.card-top h1, h2, h3 {
     margin: 0;
     white-space: nowrap;
 }
@@ -58,6 +58,11 @@ body, html {
 
 .card-top h2 {
     font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.card-top h3 {
+    font-size: 14px;
 }
 
 .card-bottom {
