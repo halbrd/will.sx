@@ -11,13 +11,20 @@
     <div class="card">
         <div class="card-top highlighted">
             <img class="pic" src="{{ url_for('static', filename='img/profile.png') }}" alt="">
-            <h1 class="name">William Holt</h1>
+            <h1>William Holt</h1>
             <h2>Software Engineer</h2>
         </div>
         <div class="card-bottom inverted">
-            <div class="icon">🎓</div><div class="text">Bachelor of Computer Science, Monash University</div>
-            <div class="icon">❤️</div><div class="text">Python 🐍 and Kotlin <img src="{{ url_for('static', filename='img/kotlin.png') }}" alt="Kotlin logo"></div>
-            <div class="icon">📍</div><div class="text">Melbourne, Australia</div>
+            <div class="icon">🎓</div>
+            <div class="text">Bachelor of Computer Science, Monash University</div>
+            <div class="icon">💼</div>
+            <div class="text">Software Engineer at <a href="https://digio.com.au/"><img class="digio" src="{{ url_for('static', filename='img/digio.png') }}" alt="DigIO"></a></div>
+            <div class="icon">❤️</div>
+            <div class="text">Python 🐍 and Kotlin <img src="{{ url_for('static', filename='img/kotlin.png') }}" alt="Kotlin"></div>
+            <div class="icon">📍</div>
+            <div class="text">Melbourne, Australia</div>
+            <div class="icon">📧</div>
+            <div class="text">{% for char in 'halbrd@gmail.com' %}<span class="decoy@nicedomain.com">{{ char }}</span>{% endfor %}</div>
         </div>
     </div>
     <div class="links">
@@ -25,7 +32,8 @@
         <a href="https://linkedin.com/in/william-holt/"><img class="icon" src="{{ url_for('static', filename='img/linkedin-mono.png') }}" alt="LinkedIn"></a>
         <a href="https://keybase.io/halbrd"><img class="icon" src="{{ url_for('static', filename='img/keybase-mono.png') }}" alt="Keybase"></a>
         <a href="https://paypal.me/halbrd"><img class="icon" src="{{ url_for('static', filename='img/paypal-mono.png') }}" alt="PayPal"></a>
-        <a href="https://halbrd.com"><img class="icon" src="{{ url_for('static', filename='img/halbrd.com-mono.png') }}" alt="PayPal"></a>
+        <a href="https://halbrd.com"><img class="icon" src="{{ url_for('static', filename='img/halbrd.com-mono.png') }}" alt="halbrd.com"></a>
     </div>
+
 </div>
 {% endblock %}
