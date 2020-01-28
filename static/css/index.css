@@ -1,14 +1,7 @@
 :root {
     --border-radius: 20px;
+    --card-bottom-text-height: 20px;
 }
-
-@media only screen and (max-width: 1200px) {
-
-}
-
-/* body * {
-    border: solid white 1px;
-} */
 
 body, html {
   height: 100%;
@@ -16,16 +9,17 @@ body, html {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
 }
 
 .card {
     border-radius: var(--border-radius);
-
-    width: calc(100% - 80px);
-    max-width: 500px;
-    margin: auto;
-
 
     box-shadow: 0px 0px 5px #222222;
 
@@ -38,10 +32,10 @@ body, html {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
-    padding: 40px;
+    padding: 30px;
 }
 
 .pic {
@@ -53,20 +47,17 @@ body, html {
     border-radius: var(--border-radius);
 }
 
-h1 {
+.card-top h1, h2 {
     margin: 0;
+    white-space: nowrap;
+}
+
+.card-top h1 {
     font-size: 48px;
 }
 
-h2 {
-    margin: 0;
+.card-top h2 {
     font-size: 24px;
-}
-
-h3 {
-    margin: 0;
-    margin-bottom: 8px;
-    font-size: 16px;
 }
 
 .card-bottom {
@@ -74,6 +65,25 @@ h3 {
     border-bottom-right-radius: var(--border-radius);
 
     padding: 30px;
+
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.card-bottom .icon {
+    margin: auto;
+}
+
+.card-bottom .text {
+    padding-left: 12px;
+    text-indent: -12px;
+}
+
+.card-bottom .text img {
+    height: 0.8em;
+    width: 0.8em;
 }
 
 .links {
@@ -85,7 +95,7 @@ h3 {
     margin-top: 0px;
 }
 
-.link-icon {
+.links .icon {
     width: 48px;
     height: 48px;
 
