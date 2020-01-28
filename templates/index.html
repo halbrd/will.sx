@@ -4,6 +4,7 @@
 
 {% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
 {% endblock %}
 
 {% block body %}
@@ -23,7 +24,11 @@
             <div class="icon">❤️</div>
             <div class="text">Python 🐍 and Kotlin <img src="{{ url_for('static', filename='img/kotlin.png') }}" alt="Kotlin"></div>
             <div class="icon">📧</div>
-            <div class="text">{% for char in 'halbrd@gmail.com' %}<span class="decoy@nicedomain.com">{{ char }}</span>{% endfor %}</div>
+            <div class="text"
+                data-cipher="qhpanlkbjrfde@sgtmuaviwlx.yczom"
+                onmouseover="showEmail(this, 'data-cipher', /[efjknpqstuvwxyz]/g)"
+                onmousedown="showEmail(this, 'data-cipher', /[efjknpqstuvwxyz]/g)"
+                onclick=    "showEmail(this, 'data-cipher', /[efjknpqstuvwxyz]/g)">halbrd [at] Google's email service [dot] com</div>
         </div>
     </div>
     <div class="links">
@@ -33,6 +38,5 @@
         <a href="https://paypal.me/halbrd"><img class="icon" src="{{ url_for('static', filename='img/paypal-mono.png') }}" alt="PayPal"></a>
         <a href="https://halbrd.com"><img class="icon" src="{{ url_for('static', filename='img/halbrd.com-mono.png') }}" alt="halbrd.com"></a>
     </div>
-
 </div>
 {% endblock %}
