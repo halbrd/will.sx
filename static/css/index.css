@@ -10,7 +10,7 @@ body, html {
     justify-content: flex-start;
 }
 
-.page {
+main {
     /* center card and give it margin */
     margin-left: auto;
     margin-right: auto;
@@ -106,7 +106,7 @@ body, html {
     vertical-align: bottom;
 }
 
-.links {
+nav {
     /* centered flex layout */
     display: flex;
     flex-direction: row;
@@ -116,7 +116,7 @@ body, html {
     margin-top: 0px;
 }
 
-.links .icon {
+nav .icon {
     /* layout */
     width: 48px;
     height: 48px;
