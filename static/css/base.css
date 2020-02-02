@@ -1,0 +1,27 @@
+:root {
+    --color-1: #1b2a49;
+    --color-2: #ff925f;
+    --color-3: #fe92a1;
+    --color-4: #ffffff;
+}
+
+body {
+    background-color: var(--color-1);
+    color: var(--color-4);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.highlighted {
+    background: radial-gradient(at top left, var(--color-3) 0%, var(--color-2) 100%);
+    color: var(--color-4);
+}
+
+.inverted {
+    background-color: var(--color-4);
+    color: var(--color-1);
+}
+
+a, a:hover, a:visited, a:active, a:focus {
+    text-decoration: none;
+}

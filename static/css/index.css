@@ -1,0 +1,125 @@
+:root {
+    --border-radius: 20px;
+    --card-bottom-text-height: 20px;
+}
+
+body, html {
+    /* make card wrap content instead of matching parent */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main {
+    /* center card and give it margin */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.card {
+    /* decorations */
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 5px #222222;
+
+    margin-bottom: 16px;
+}
+
+.card-top {
+    /* decorations */
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+
+    padding: 30px;
+
+    /* center content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pic {
+    /* decorations */
+    border-radius: var(--border-radius);
+
+    margin: 20px;
+
+    /* layout */
+    width: 220px;
+    height: 220px;
+}
+
+.card-top h1, h2, h3 {
+    /* get rid of default behaviour */
+    margin: 0;
+    white-space: nowrap;
+}
+
+.card-top h1 {
+    font-size: 48px;
+}
+
+.card-top h2 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.card-top h3 {
+    font-size: 14px;
+}
+
+.card-bottom {
+    /* decorations */
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+
+    padding: 30px;
+
+    /* arrange dot points as grid */
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.card-bottom .icon {
+    /* center icons relative to text */
+    margin: auto;
+}
+
+.card-bottom .text {
+    /* enable hanging indent */
+    padding-left: 12px;
+    text-indent: -12px;
+}
+
+.card-bottom .text img {
+    /* make images the right size relative to text size */
+    height: 0.8em;
+    width: auto;
+}
+
+.card-bottom .text .digio {
+    /* specific overrides for DigIO logo */
+    height: 1.2em;
+    vertical-align: bottom;
+}
+
+nav {
+    /* centered flex layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: auto;
+    margin-top: 0px;
+}
+
+nav .icon {
+    /* layout */
+    width: 48px;
+    height: 48px;
+
+    margin: 8px;
+}

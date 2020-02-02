@@ -1,7 +1,40 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Hi, I'm Will{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock %}
 
 {% block body %}
-<img src="{{ url_for('static', filename='datboi.gif') }}" alt="here he comes">
+<main>
+    <div class="card">
+        <div class="card-top highlighted">
+            <img class="pic" src="{{ url_for('static', filename='img/profile.png') }}" alt="">
+            <h1>William Holt</h1>
+            <h2>Software Engineer</h2>
+            <h3>📍 Melbourne, Australia</h3>
+        </div>
+        <div class="card-bottom inverted">
+            <div class="icon">🎓</div>
+            <div class="text">Bachelor of Computer Science, Monash University</div>
+            <div class="icon">💼</div>
+            <div class="text">Software Engineer at <a href="https://digio.com.au/"><img class="digio" src="{{ url_for('static', filename='img/digio.png') }}" alt="DigIO"></a></div>
+            <div class="icon">❤️</div>
+            <div class="text">Python 🐍 and Kotlin <img src="{{ url_for('static', filename='img/kotlin.png') }}" alt="Kotlin"></div>
+            <div class="icon">📧</div>
+            <div class="text"
+                data-cipher="qhpanlkbjrfde@sgtmuaviwlx.yczom"
+                onmouseover="showEmail(this, 'data-cipher', /[efjknpqstuvwxyz]/g)"
+                onmousedown="showEmail(this, 'data-cipher', /[efjknpqstuvwxyz]/g)"
+                onclick=    "showEmail(this, 'data-cipher', /[efjknpqstuvwxyz]/g)">halbrd [at] Google's email service [dot] com</div>
+        </div>
+    </div>
+    <nav>
+        <a href="https://github.com/halbrd/"><img class="icon" src="{{ url_for('static', filename='img/github.png') }}" alt="GitHub"></a>
+        <a href="https://linkedin.com/in/william-holt/"><img class="icon" src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn"></a>
+        <a href="https://halbrd.com"><img class="icon" src="{{ url_for('static', filename='img/halbrd.com.png') }}" alt="halbrd.com"></a>
+    </nav>
+</main>
 {% endblock %}
